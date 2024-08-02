@@ -69,7 +69,7 @@ minetest.override_item("tmw_slimes:lava_goo_block", {groups=table.copy(g)})
 mobs:spawn({
 	name = "tmw_slimes:lava_slime",
 	nodes = {
-		"group:lava",
+		"group:lava", "everness:volcanic_rock",
 	},
 	min_light = 0,
 	max_light = 16,

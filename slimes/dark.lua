@@ -77,7 +77,11 @@ minetest.override_item("tmw_slimes:dark_goo_block", {groups=table.copy(g)})
 mobs:spawn({
 	name = "tmw_slimes:dark_slime",
 	nodes = {
-		"default:stone"
+		"default:stone",
+		"everness:coral_desert_stone",
+		"everness:crystal_stone",
+		"everness:cursed_stone",
+		"everness:mineral_stone"
 	},
 	min_light = 0,
 	max_light = 16,

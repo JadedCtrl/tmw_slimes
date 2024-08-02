@@ -26,7 +26,7 @@ mobs:register_mob("tmw_slimes:cloud_slime", {
 	jump = true,
 	view_range = 15,
 	fly = true,
-	fly_in = {"air", "default:water_source", "default:water_flowing", "default:river_water_source", "default:river_water_flowing"},
+	fly_in = {"air", "group:water"},
 	drops = {
 		{name = "tmw_slimes:cloud_goo", chance = 1, min = 0, max = 2},
 	},

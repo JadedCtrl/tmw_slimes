@@ -26,7 +26,7 @@ mobs:register_mob("tmw_slimes:ocean_slime", {
 	view_range = 48, --This thing will chase you all the way to shore.
 	jump = true,
 	fly = true,
-	fly_in = {"default:water_source", "default:water_flowing", "default:river_water_source", "default:river_water_flowing"},
+	fly_in = {"group:water"},
 	drops = {
 		{name = "tmw_slimes:ocean_goo", chance = 1, min = 0, max = 2},
 	},
@@ -56,9 +56,7 @@ minetest.override_item("tmw_slimes:ocean_goo", {on_use = minetest.item_eat(1)})
 
 mobs:spawn({
 	name = "tmw_slimes:ocean_slime",
-	nodes = {
-		"default:water_source",
-	},
+	nodes = {"group:water"},
 	min_light = 0,
 	max_light = 16,
 	chance = tmw_slimes.common,

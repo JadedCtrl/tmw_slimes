@@ -60,7 +60,9 @@ minetest.register_craft({
 mobs:spawn({
 	name = "tmw_slimes:mineral_slime",
 	nodes = {
-		"default:stone"
+		"default:stone",
+		"everness:mineral_cave_stone",
+		"everness:mineral_stone"
 	},
 	min_light = 0,
 	max_light = 16,

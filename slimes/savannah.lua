@@ -63,7 +63,7 @@ end
 mobs:spawn({
 	name = "tmw_slimes:savannah_slime",
 	nodes = {
-		"default:dirt_with_dry_grass"
+		"default:dirt_with_dry_grass", "group:everness_dry_grass"
 	},
 	min_light = 0,
 	max_light = 16,
